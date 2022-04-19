@@ -157,7 +157,7 @@
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 5fr 2fr;
     grid-template-rows: 1fr 9fr;
 }
 
@@ -167,15 +167,21 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
     justify-content: space-between;
+    height: auto;
 }
 
 .mainLeft {
     margin: 40px;
 }
 
+.mainRight {
+    margin: 40px;
+}
+
 .task {
     width: auto;
     background-color: white;
+    color: rgb(104, 103, 103);
     padding: 20px;
     border-left: #F7B700;
     border-style: solid;
@@ -184,6 +190,11 @@
     border-top-style: none;
     border-bottom-style: none;
     border-width: 10px;
+    box-shadow: 3px 3px 3px rgb(196, 196, 196);   
+}
+
+.task h3 {
+    color: black;
 }
 
 .taskBtns {
@@ -195,4 +206,42 @@
 
 .task p {
     margin-bottom: 50px;
+}
+
+.rightTop {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    background-color: white;
+    box-shadow: 3px 3px 3px rgb(196, 196, 196);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.announcement {
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+    color: rgb(104, 103, 103);
+  }
+
+.announcement h4 {
+    color: black;
+}
+
+.announcement:last-child, .announcement:nth-last-child(2):nth-child(odd) {
+border-bottom: none;
+}
+
+.rightBottom {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    background-color: white;
+    box-shadow: 3px 3px 3px rgb(196, 196, 196);
+    border-radius: 10px;
+}
+
+.trendingProfile {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
 }
